@@ -95,7 +95,8 @@ def write(path: Path, data: bytes) -> None:
     temporary.replace(path)
 
 
-def update(output: Path, key: str, today: dt.date | None = None, fetch=fetch_year) -> dict:
+def update(output: Path, key: str, today: dt.date | None = None, fetch=fetch_year,
+           years: list[int] | None = None) -> dict:
     today = today or dt.datetime.now(dt.timezone.utc).date()
     manifest_path = output / "manifest.json"
     old = read_manifest(manifest_path)
@@ -107,7 +108,16 @@ def update(output: Path, key: str, today: dt.date | None = None, fetch=fetch_yea
 
     # Fetch and validate everything before publishing any file. A failed year leaves
     # the previous manifest and immutable snapshots usable.
-    results = {year: fetch(year, key) for year in (today.year, today.year + 1)}
+    requested_years = years if years is not None else [today.year, today.year + 1]
+    if (not requested_years or len(set(requested_years)) != len(requested_years)
+            or any(year < 1900 or year > 9999 for year in requested_years)):
+        raise UpdateError("Requested year range is invalid")
+    results = {}
+    for year in requested_years:
+        try:
+            results[year] = fetch(year, key)
+        except UpdateError as exc:
+            raise UpdateError(f"Failed to fetch {year}: {exc}") from exc
     snapshots = {}
     for year, holidays in results.items():
         previous = previous_kr.get(str(year), {})
@@ -146,13 +156,24 @@ def update(output: Path, key: str, today: dt.date | None = None, fetch=fetch_yea
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=Path("data"))
+    parser.add_argument("--year-start", type=int)
+    parser.add_argument("--year-end", type=int)
     args = parser.parse_args()
     key = os.environ.get("KASI_SERVICE_KEY", "").strip()
     if not key:
         print("Missing GitHub Actions secret KASI_SERVICE_KEY", file=sys.stderr)
         return 2
+    if (args.year_start is None) != (args.year_end is None):
+        print("Both --year-start and --year-end must be provided", file=sys.stderr)
+        return 2
+    years = None
+    if args.year_start is not None:
+        if args.year_start > args.year_end or args.year_end - args.year_start > 99:
+            print("Requested year range is invalid (maximum 100 years)", file=sys.stderr)
+            return 2
+        years = list(range(args.year_start, args.year_end + 1))
     try:
-        manifest = update(args.output, key)
+        manifest = update(args.output, key, years=years)
     except UpdateError as exc:
         print(f"Holiday update failed: {exc}", file=sys.stderr)
         return 1

@@ -5,6 +5,15 @@ on:
     # 03:17 KST daily; keep away from the top of the hour.
     - cron: '17 18 * * *'
   workflow_dispatch:
+    inputs:
+      year_start:
+        description: "Optional first year (leave blank for current and next year)"
+        required: false
+        type: string
+      year_end:
+        description: "Optional last year (leave blank for current and next year)"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -30,7 +39,13 @@ jobs:
       - name: Generate versioned holiday data
         env:
           KASI_SERVICE_KEY: ${{ secrets.KASI_SERVICE_KEY }}
-        run: python3 scripts/update_holidays.py --output data
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "${{ inputs.year_start }}" || -n "${{ inputs.year_end }}" ]]; then
+            args+=(--year-start "${{ inputs.year_start }}" --year-end "${{ inputs.year_end }}")
+          fi
+          python3 scripts/update_holidays.py --output data "${args[@]}"
 
       - name: Prepare Pages site
         run: |
