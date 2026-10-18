@@ -38,7 +38,8 @@ class HolidayPublisherTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory)
             today = dt.date(2026, 10, 18)
-            payload = {2026: [{"date": "2026-10-03", "name": "Foundation Day"}], 2027: []}
+            payload = {2026: [{"date": "2026-10-03", "name": "Foundation Day"}],
+                       2027: [{"date": "2027-01-01", "name": "New Year"}]}
             first = update(output, "secret", today, lambda year, key: payload[year])
             self.assertEqual(1, first["dataVersion"])
             self.assertEqual("2026-10-03", json.loads((output / first["countries"]["kr"]["2026"]["path"]).read_text())
@@ -48,11 +49,12 @@ class HolidayPublisherTests(unittest.TestCase):
             self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest())
             second = update(output, "secret", today, lambda year, key: payload[year])
             self.assertEqual(1, second["dataVersion"])
-            payload[2026] = []  # Removing a holiday is published as a new immutable version.
+            payload[2026] = [{"date": "2026-10-04", "name": "Changed Foundation Day"}]
             third = update(output, "secret", today, lambda year, key: payload[year])
             self.assertEqual(2, third["dataVersion"])
             self.assertEqual(2, third["countries"]["kr"]["2026"]["dataVersion"])
-            self.assertEqual([], json.loads((output / third["countries"]["kr"]["2026"]["path"]).read_text())["holidays"])
+            self.assertEqual("2026-10-04", json.loads(
+                (output / third["countries"]["kr"]["2026"]["path"]).read_text())["holidays"][0]["date"])
 
     def test_failure_does_not_mutate_existing_publication(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -77,10 +79,19 @@ class HolidayPublisherTests(unittest.TestCase):
             output = Path(directory)
             calls = []
             manifest = update(output, "secret", dt.date(2026, 10, 18),
-                              lambda year, key: calls.append(year) or [], years=list(range(2006, 2047)))
+                              lambda year, key: calls.append(year) or
+                              [{"date": f"{year}-01-01", "name": "New Year"}], years=list(range(2006, 2047)))
             self.assertEqual(list(range(2006, 2047)), calls)
             self.assertEqual({str(year) for year in range(2006, 2047)},
                              set(manifest["countries"]["kr"]))
+
+    def test_empty_future_years_are_not_published_as_holiday_free(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            manifest = update(output, "secret", dt.date(2026, 10, 18),
+                              lambda year, key: ([{"date": "2026-01-01", "name": "New Year"}]
+                                                 if year == 2026 else []), years=[2026, 2046])
+            self.assertEqual({"2026"}, set(manifest["countries"]["kr"]))
 
     def test_explicit_year_failure_identifies_year_and_preserves_existing_publication(self):
         with tempfile.TemporaryDirectory() as directory:

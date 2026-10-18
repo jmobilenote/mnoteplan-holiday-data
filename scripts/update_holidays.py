@@ -121,6 +121,24 @@ def update(output: Path, key: str, today: dt.date | None = None, fetch=fetch_yea
     snapshots = {}
     for year, holidays in results.items():
         previous = previous_kr.get(str(year), {})
+        if not holidays:
+            # KASI returns an empty successful response for years outside its
+            # published calendar range. Do not present that as a known holiday-free year.
+            old_data = None
+            if previous.get("path"):
+                try:
+                    old_data = json.loads((output / previous["path"]).read_text(encoding="utf-8"))
+                except (OSError, ValueError):
+                    old_data = None
+            if old_data is not None and old_data.get("holidays") == []:
+                kr.pop(str(year), None)
+                try:
+                    (output / previous["path"]).unlink()
+                except OSError:
+                    pass
+                changed = True
+            print(f"No holiday entries for {year}; omitted from the published manifest")
+            continue
         old_data = None
         if previous.get("path"):
             try:
