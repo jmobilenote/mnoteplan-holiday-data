@@ -1,296 +1,170 @@
 {
   "schemaVersion": 1,
-  "dataVersion": 2,
-  "updatedAt": "2026-10-18T14:24:03+00:00",
-  "checkedAt": "2026-10-18T14:24:03+00:00",
+  "dataVersion": 3,
+  "updatedAt": "2026-10-18T14:25:54+00:00",
+  "checkedAt": "2026-10-18T14:25:54+00:00",
   "countries": {
     "kr": {
       "2026": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:14:00+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2026.v1.json",
         "sha256": "78bc77a5aada1fa485fcbb42cd6b46db3f19b4dc318eb6c017d81cc1efb81e39"
       },
       "2027": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:14:00+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2027.v1.json",
         "sha256": "ddfa0c1887bd46ecfccf27fa2dc7f37d26ad2576497c7c1f804b816919dac3be"
       },
       "2006": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2006.v1.json",
         "sha256": "d318ed2af311e0b28f324306866dcbf270f71cca2631d75002a42f1f09b7a6a8"
       },
       "2007": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2007.v1.json",
         "sha256": "9022d395ff5930ab42e47b1189be42e95a2d6a5a9c4c1178021ca788fbd87148"
       },
       "2008": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2008.v1.json",
         "sha256": "8548d695a96f090a933284ed50a0dbb25b532ee2b8dc42bbb658dcbaab7d0eb9"
       },
       "2009": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2009.v1.json",
         "sha256": "19d73e12d1e00577d4951638b256b1a97af902bcddb2942c036f9a1ba31febc0"
       },
       "2010": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2010.v1.json",
         "sha256": "4a7a87c75f52cab724d71412360eb39cd5dab3eac740e0b336c9b18877783023"
       },
       "2011": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2011.v1.json",
         "sha256": "a9d011d378b63c3312ceb2b907b1adc5a43e910782c4532eb82aa49942cd8a44"
       },
       "2012": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2012.v1.json",
         "sha256": "fe4b5366c298e5a3e83fc308ae14ff2d8760e3ccff9a26124c91e1524b285f25"
       },
       "2013": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2013.v1.json",
         "sha256": "29082e428ad13ad12e2779f621f61ea799d0252d59e1da74855a6428efcda6ab"
       },
       "2014": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2014.v1.json",
         "sha256": "7aaef6154a55f42f3e46e401b21585aa0886eb54288a43518f36db2abf4853bd"
       },
       "2015": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2015.v1.json",
         "sha256": "dd7c6ddaf2a8e73d966343c1380755104e4449911d912417abae93d3364cb632"
       },
       "2016": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2016.v1.json",
         "sha256": "167f33f39d4306c42e39dec303d16299635999b0a9562c2e01b1c5bd15845982"
       },
       "2017": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2017.v1.json",
         "sha256": "abbdfcab06bda785d26f37cb2b2848eb9e2c9ab74f2ea85a0340276d28250500"
       },
       "2018": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2018.v1.json",
         "sha256": "f2a5c3cde5bdc092da4b8bd94309b26dc3141897033459b83b05360ddddb1132"
       },
       "2019": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2019.v1.json",
         "sha256": "4766b0fe3c37d5e9b6d13d2b94d9b6432acf06c6ca066c7f507a11ff737db5f5"
       },
       "2020": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2020.v1.json",
         "sha256": "783544fa73e1f79c037bc516144aee4481faefb851a6a11ac8bf33f6a7c619e5"
       },
       "2021": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2021.v1.json",
         "sha256": "f4a52a5be71259e7582cb09567e20873274e75b04d1af102f30786d8308dd5af"
       },
       "2022": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2022.v1.json",
         "sha256": "03ee321db720da1e6fbdbc83237b63ec61b0123d5c6f84040b8cc6b2ed37934a"
       },
       "2023": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2023.v1.json",
         "sha256": "d8b12aea7750c850998d04244a9f32fcb1453ee87b6c3bae8d5ec3ef05054c20"
       },
       "2024": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2024.v1.json",
         "sha256": "badf2280e8d22bdaeb57173017052352a7ef716900605ed1c8fdde1b64d8eadc"
       },
       "2025": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2025.v1.json",
         "sha256": "49d19b69ffc84985b09e25928ca66c3b74c152b4fd2a8f305b9ed157bdefcf7f"
       },
       "2028": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
+        "checkedAt": "2026-10-18T14:25:54+00:00",
         "path": "kr/2028.v1.json",
         "sha256": "33282d067d63c3f2877adf97e6dc4da38f429c1be950b0e0f0a72a94f7d76615"
-      },
-      "2029": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2029.v1.json",
-        "sha256": "ef07dc1e27d1d65cedd40c94f1c59cdae5527fdce9cb931f0fd4607cab6337c2"
-      },
-      "2030": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2030.v1.json",
-        "sha256": "4fb71ff74c9fd390c8ede750caf01d6bb9f73d474676e407a39eaffa7c044119"
-      },
-      "2031": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2031.v1.json",
-        "sha256": "fb5e04d54c658ac706e0bde7c1962b1fb86e30d0232094ecfa2cd6152ac08298"
-      },
-      "2032": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2032.v1.json",
-        "sha256": "259a58864628c56ef4bf9ec91584196d9be17c3d51ee24d6eec1a8724b11e062"
-      },
-      "2033": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2033.v1.json",
-        "sha256": "be60cf0e73d63123ffc389f1bb52067f7f9c17c21fe8bc1e5f5a98ad89fae05f"
-      },
-      "2034": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2034.v1.json",
-        "sha256": "9226b8fcc2629ff25df03f38f9f045b66d87b158556bbe077d98b697edc9790b"
-      },
-      "2035": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2035.v1.json",
-        "sha256": "25ce1d98d9f7cbe6cb716c2838e95d6c2a44c791eddbb488a7319c9ebf7b6166"
-      },
-      "2036": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2036.v1.json",
-        "sha256": "a0ce2c0a4dcf67d91dce3961cd39e2aa4e9e73a523ecfb02e507f4b1ca18f51c"
-      },
-      "2037": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2037.v1.json",
-        "sha256": "e0734356fd369f63cf047ad1ec057dabf5b14ec01b9628d10888aac49eed4611"
-      },
-      "2038": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2038.v1.json",
-        "sha256": "5026aa628b0abb6fc521702c5d41c56763bd836e187d245363f383d0690075fc"
-      },
-      "2039": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2039.v1.json",
-        "sha256": "2451ebc418d9254e803abf62607f651dacce22205c42905d5292dbc8d4ba734d"
-      },
-      "2040": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2040.v1.json",
-        "sha256": "d0017de6339eee98c89dd280665effe9773cecfea33bc60e7ba06a5ad75ac1a6"
-      },
-      "2041": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2041.v1.json",
-        "sha256": "e013a9afeaee10d592add1cbb6fa97a393b432f32eb12c910f8981153da5cf14"
-      },
-      "2042": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2042.v1.json",
-        "sha256": "33e5fdba65035508ae863f3a35a1e5b9ca7ad2193027c4a3fa33018f71ea6f9c"
-      },
-      "2043": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2043.v1.json",
-        "sha256": "481a2b4834e50d0167c7249eddaea9fcb8696fb8296badf6daab3318168511b5"
-      },
-      "2044": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2044.v1.json",
-        "sha256": "68f40f93050ba9a00c3400b433536a92aa964b7d040337418c59db85d58524fc"
-      },
-      "2045": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2045.v1.json",
-        "sha256": "f21fb0158e2817d460cc0d9f354ce2421e1d6523f3085674294dc27985b2fbca"
-      },
-      "2046": {
-        "dataVersion": 1,
-        "updatedAt": "2026-10-18T14:24:03+00:00",
-        "checkedAt": "2026-10-18T14:24:03+00:00",
-        "path": "kr/2046.v1.json",
-        "sha256": "2987f11c6e271b59d94354caf277f0571c4813826f48d74b2200f2b3ecc10181"
       }
     }
   }
