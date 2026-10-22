@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "dataVersion": 3,
   "updatedAt": "2026-10-18T14:25:54+00:00",
-  "checkedAt": "2026-10-21T18:53:16+00:00",
+  "checkedAt": "2026-10-22T18:53:26+00:00",
   "countries": {
     "kr": {
       "2026": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:14:00+00:00",
-        "checkedAt": "2026-10-21T18:53:16+00:00",
+        "checkedAt": "2026-10-22T18:53:26+00:00",
         "path": "kr/2026.v1.json",
         "sha256": "78bc77a5aada1fa485fcbb42cd6b46db3f19b4dc318eb6c017d81cc1efb81e39"
       },
       "2027": {
         "dataVersion": 1,
         "updatedAt": "2026-10-18T14:14:00+00:00",
-        "checkedAt": "2026-10-21T18:53:16+00:00",
+        "checkedAt": "2026-10-22T18:53:26+00:00",
         "path": "kr/2027.v1.json",
         "sha256": "ddfa0c1887bd46ecfccf27fa2dc7f37d26ad2576497c7c1f804b816919dac3be"
       },
